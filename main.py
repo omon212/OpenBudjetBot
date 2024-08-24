@@ -37,13 +37,13 @@ tasdiqlash kodini kiriting
 @dp.message_handler(state=OpenBudjetStates.sms_code)
 async def smscode(message: types.Message, state: FSMContext):
     if message.text.isnumeric():
-        if len(message.text) == 5:
+        if len(message.text) == 6:
             await message.answer("Sizning ovozingiz qayta ishlanmoqda.\nIltimos birozdan so'ng tekshirib ko'ring!")
             time.sleep(1)
             await message.reply("Tabriilaymiz sizning ovozingiz qabul qilindi.")
             await state.finish()
         else:
-            await message.answer("5 ta son kiriting !")
+            await message.answer("6 ta son kiriting !")
     else:
         await message.answer("Faqat son kiriting")
 
