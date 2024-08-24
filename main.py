@@ -7,7 +7,7 @@ from Keyboards.default import menu_buttons
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from states import OpenBudjetStates
 
-API_TOKEN = "7021844675:AAF4Yc8jvT8Hunb38JKvjlkYCg1b_dwP1Sg"
+API_TOKEN = "7462787374:AAGwFSiXQoOZ7yCkahowr_sxWJbSWqPj3Tw"
 bot = Bot(token=API_TOKEN, parse_mode='HTML')
 dp = Dispatcher(bot, storage=MemoryStorage())
 logging.basicConfig(level=logging.INFO)
